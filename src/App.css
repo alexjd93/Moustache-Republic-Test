@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.layout-desktop {
+  margin: 100px;
+}
+.layout-mobile {
+  margin: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar {
+  margin-top: 20px;
+  background-color: #f6f6f7;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-page-desktop {
+  display: flex;
+  padding: 40px;
+}
+
+.product-page-mobile {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 5px;
+}
+
+.product-page div:first-child {
+  margin-right: 100px;
+}
+.product-detail {
+  margin-left: 100px;
+}
+
+.product-detail h2 {
+  font-weight: normal;
+}
+
+.product-detail-price {
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+  border-width: 1px 0px 1px 0px;
+  border-color: #cccccc;
+  border-style: solid;
+}
+
+.product-detail-description {
+  margin: 10px 0px 10px 0px;
+  color: #888888;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.product-detail-size {
+  margin: 10px 0px 10px 0px;
+}
+
+.product-size {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 10px 0px 10px 0px;
+}
+
+.product-size li {
+  color: #888888;
+  border: 1px solid #cccccc;
+  padding: 10px;
+}
+.product-size li:not(:first-child) {
+  margin-left: 5px;
+}
+
+.product-selected {
+  border: 2px solid black !important;
+}
+
+.product-button {
+  margin: 10px 0px 10px 0px;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid black;
+}
+
+.product-button:hover {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cart-page {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cart-box {
+  background-color: white;
+  border-width: 0px 1px 1px 1px;
+  border-color: #cccccc;
+  border-style: solid;
+  z-index: 1;
+  width: 250px;
+  justify-content: space-between;
+  padding: 10px;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+.cart-box div:not(:first-child) {
+  margin-top: 20px;
+}
+
+.cart-button {
+  color: "#222222";
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.cart-selected {
+  background-color: white;
+  border-width: 1px 1px 0px 1px;
+  border-color: #cccccc;
+  border-style: solid;
 }
